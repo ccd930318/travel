@@ -2,7 +2,7 @@
     "name": "京阪三日精華遊",
     "short_name": "京阪旅遊",
     "description": "完整旅遊手冊，含詳細時刻表、壽喜燒推薦、交通攻略，離線可用",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#f7fafc",
     "theme_color": "#1a365d",

@@ -1,14 +1,14 @@
 const CACHE_NAME = 'kyoto-osaka-trip-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/js/main.js',
-    '/pages/sukiyaki.html',
-    '/pages/checklist.html',
-    '/pages/transport.html',
-    '/pages/luggage.html',
-    '/manifest.json'
+    './',
+    './index.html',
+    './css/style.css',
+    './js/main.js',
+    './pages/sukiyaki.html',
+    './pages/checklist.html',
+    './pages/transport.html',
+    './pages/luggage.html',
+    './manifest.json'
 ];
 
 // Install event
