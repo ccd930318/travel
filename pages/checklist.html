@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ 出國Checklist | 京阪三日精華遊</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main-header" style="background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);">
+        <div class="container">
+            <h1>✅ 出國前 Checklist</h1>
+            <p class="subtitle">勾選後會自動儲存</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">← 返回首頁</a></li>
+                <li><button onclick="resetChecklist()" class="nav-link"
+                        style="background:none;border:none;cursor:pointer;">🔄 重設</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Progress -->
+        <div class="checklist-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text">0/0</div>
+        </div>
+
+        <!-- 證件 -->
+        <section class="checklist-section">
+            <div class="checklist-header">
+                <h2>📄 證件與文件</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="passport">
+                    <label for="passport">護照（效期6個月以上）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ticket">
+                    <label for="ticket">機票電子票證（列印備份）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="hotel">
+                    <label for="hotel">飯店訂房確認信</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="concert">
+                    <label for="concert">Lady Gaga 演唱會門票（電子票截圖＋列印）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="vjw">
+                    <label for="vjw">Visit Japan Web 填寫完成</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="insurance">
+                    <label for="insurance">旅遊保險保單</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 金錢 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #d69e2e 0%, #ecc94b 100%);">
+                <h2>💳 金錢與支付</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="cash">
+                    <label for="cash">日幣現金 ¥30,000-50,000</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="creditcard">
+                    <label for="creditcard">信用卡（Visa/Mastercard）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="icoca">
+                    <label for="icoca">ICOCA卡（機場購買）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="haruka">
+                    <label for="haruka">HARUKA車票（建議預購）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="rapit">
+                    <label for="rapit">南海Rapi:t車票（網路預購¥1,300）</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 網路 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);">
+                <h2>📱 網路與通訊</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="esim">
+                    <label for="esim">eSIM 或 Wi-Fi 分享器</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="offlinemap">
+                    <label for="offlinemap">離線地圖下載（Google Maps日本）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="translate">
+                    <label for="translate">翻譯APP（Google翻譯）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="pwa">
+                    <label for="pwa">本網頁加入手機主畫面</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 衣物 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #805ad5 0%, #9f7aea 100%);">
+                <h2>👕 行李與衣物</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="jacket">
+                    <label for="jacket">羽絨衣</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="sweater">
+                    <label for="sweater">毛衣/針織衫 ×2-3</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="heattech">
+                    <label for="heattech">發熱衣 ×2</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="scarf">
+                    <label for="scarf">圍巾</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="gloves">
+                    <label for="gloves">手套</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="beanie">
+                    <label for="beanie">毛帽</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="shoes">
+                    <label for="shoes">舒適好走的鞋（演唱會要站很久！）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="umbrella">
+                    <label for="umbrella">摺疊傘</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電子產品 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);">
+                <h2>🔌 電子產品</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="powerbank">
+                    <label for="powerbank">行動電源</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="charger">
+                    <label for="charger">充電線（iPhone/USB-C）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="adapter">
+                    <label for="adapter">轉接頭（台灣插頭可直接用）</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 演唱會 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #ed64a6 0%, #f687b3 100%);">
+                <h2>🎤 演唱會準備</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="concertticket">
+                    <label for="concertticket">門票確認（電子票截圖＋列印）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="smallbag">
+                    <label for="smallbag">輕便小包（大型包無法入場）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="phonecharged">
+                    <label for="phonecharged">手機充滿電</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="merchcash">
+                    <label for="merchcash">現金（買周邊用）</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 醫療 -->
+        <section class="checklist-section">
+            <div class="checklist-header" style="background: linear-gradient(135deg, #e53e3e 0%, #fc8181 100%);">
+                <h2>🏥 醫療與緊急</h2>
+            </div>
+            <div class="checklist-group">
+                <div class="checklist-item">
+                    <input type="checkbox" id="medicine">
+                    <label for="medicine">常備藥品（感冒藥、腸胃藥）</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="bandaid">
+                    <label for="bandaid">OK繃</label>
+                </div>
+            </div>
+            <div class="emergency-info">
+                <h4>📞 緊急聯絡</h4>
+                <p><strong>台灣駐日代表處：</strong> +81-3-3280-7811</p>
+                <p><strong>日本警察：</strong> 110</p>
+                <p><strong>日本救護車：</strong> 119</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>京阪三日精華遊 2026 | 離線可用 📱</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <style>
+        .emergency-info {
+            padding: 16px 24px;
+            background: rgba(229, 62, 62, 0.05);
+            border-top: 1px solid var(--border);
+        }
+
+        .emergency-info h4 {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .emergency-info p {
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
+    </style>
+</body>
+
+</html>
